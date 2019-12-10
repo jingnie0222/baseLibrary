@@ -1,0 +1,325 @@
+[
+        {
+            "config_file": "job.ini",
+            "config_type": "ini",
+            "modContent":[
+                {
+                    "anchor": ["main","build_requires"],
+                    "action": "add",
+                    "content": "pcre2 pcre2-devel"
+                },
+                {
+                    "anchor": ["main.svn","."],
+                    "action": "replace",
+                    "content": "http://svn.sogou-inc.com/svn/websearch4/VH/vr_QO/branches/opt_vrqo.20191014"
+                },
+                {
+                    "anchor": ["main.svn","map_search"],
+                    "action": "replace",
+                    "content": "http://svn.sogou-inc.com/svn/websearch4/VH/map_search/branches/map_search.20191018"
+                },
+                {
+                    "anchor": ["main.svn","vr_data_engine"],
+                    "action": "replace",
+                    "content": "http://svn.sogou-inc.com/svn/websearch4/web/web_nlp/vr_data_engine/branches/vr_data_engine.20191018"
+                },
+                {
+                    "anchor": ["main.svn","utils"],
+                    "action": "replace",
+                    "content": "http://svn.sogou-inc.com/svn/websearch4/web/ods_utils/branches/ods_utils.centos7.20191018"
+                }
+            ]
+        },
+        {
+            "config_file": "vrqo.cfg.in.func",
+            "config_type": "cfg",
+            "enable": true,
+            "modContent":[
+                {
+                    "anchor": ["isCacheExternal"],
+                    "action": "replace",
+                    "content": "no",
+                },
+                {
+                    "anchor": ["RedisAddress"],
+                    "action": "replace",
+                    "content": "127.0.0.1:6379"
+                },
+                {
+                    "anchor": ["RedisPassWord"],
+                    "action": "replace",
+                    "content": "Sogou"
+                },
+                {
+                    "anchor": ["isExternalVrqo"],
+                    "action": "replace",
+                    "content": "no"
+                },
+                {
+                    "anchor": ["ListenPort"],
+                    "action": "replace",
+                    "content": "8033"
+                },
+                {
+                    "anchor": ["ExternalVrqoServers"],
+                    "action": "replace",
+                    "content": "127.0.0.1:8044"
+                }
+            ]
+        },
+        {
+            "config_file": "vrqo.cfg.in.press",
+            "config_type": "cfg",
+            "enable": false,
+            "modContent":[
+                {
+                    "anchor": ["isCacheExternal"],
+                    "action": "replace",
+                    "content": "no"
+                },
+                {
+                    "anchor": ["RedisAddress"],
+                    "action": "replace",
+                    "content": "127.0.0.1:6379"
+                },
+                {
+                    "anchor": ["RedisPassWord"],
+                    "action": "replace",
+                    "content": "Sogou"
+                },
+                {
+                    "anchor": ["isExternalVrqo"],
+                    "action": "replace",
+                    "content": "no"
+                },
+                {
+                    "anchor": ["ListenPort"],
+                    "action": "replace",
+                    "content": "8033"
+                },
+                {
+                    "anchor": ["ExternalVrqoServers"],
+                    "action": "replace",
+                    "content": "offvrqo01.ex.sjs.ted:8033;offvrqo02.ex.sjs.ted:8033;offvrqo03.ex.sjs.ted:8033"
+                },
+                {
+                    "anchor": ["isGPUCraw"],
+                    "action": "replace",
+                    "content": "no"
+                }
+            ]
+        },
+        {
+            "config_file": "vrqo.cfg.in.stab",
+            "config_type": "cfg",
+            "enable": false,
+            "modContent":[
+                {
+                    "anchor": ["isCacheExternal"],
+                    "action": "replace",
+                    "content": "yes"
+                },
+                {
+                    "anchor": ["RedisAddress"],
+                    "action": "replace",
+                    "content": "127.0.0.1:6379"
+                },
+                {
+                    "anchor": ["RedisPassWord"],
+                    "action": "replace",
+                    "content": "Sogou"
+                },
+                {
+                    "anchor": ["isExternalVrqo"],
+                    "action": "replace",
+                    "content": "no"
+                },
+                {
+                    "anchor": ["ListenPort"],
+                    "action": "replace",
+                    "content": "8033"
+                },
+                {
+                    "anchor": ["ExternalVrqoServers"],
+                    "action": "replace",
+                    "content": "offvrqo01.ex.sjs.ted:8033;offvrqo02.ex.sjs.ted:8033;offvrqo03.ex.sjs.ted:8033"
+                },
+                {
+                    "anchor": ["isGPUCraw"],
+                    "action": "replace",
+                    "content": "no"
+                }
+            ]
+        },
+        {
+            "config_file": "vrqo.cfg.in.diff",
+            "config_type": "cfg",
+            "enable": false,
+            "modContent":[
+                {
+                    "anchor": ["isCacheExternal"],
+                    "action": "replace",
+                    "content": "yes"
+                },
+                {
+                    "anchor": ["RedisAddress"],
+                    "action": "replace",
+                    "content": "127.0.0.1:6379"
+                },
+                {
+                    "anchor": ["RedisPassWord"],
+                    "action": "replace",
+                    "content": "Sogou"
+                },
+                {
+                    "anchor": ["isExternalVrqo"],
+                    "action": "replace",
+                    "content": "no"
+                },
+                {
+                    "anchor": ["ListenPort"],
+                    "action": "replace",
+                    "content": "8033"
+                },
+                {
+                    "anchor": ["ExternalVrqoServers"],
+                    "action": "replace",
+                    "content": "offvrqo01.ex.sjs.ted:8033;offvrqo02.ex.sjs.ted:8033;offvrqo03.ex.sjs.ted:8033"
+                },
+                {
+                    "anchor": ["isGPUCraw"],
+                    "action": "replace",
+                    "content": "no"
+                }
+            ]
+        },
+
+        {
+            "config_file": "vrqo.cfg.ex.func",
+            "config_type": "cfg",
+            "enable": true,
+            "modContent":[
+                {
+                    "anchor": ["isCacheExternal"],
+                    "action": "replace",
+                    "content": "no"
+                },
+                {
+                    "anchor": ["RedisAddress"],
+                    "action": "replace",
+                    "content": "127.0.0.1:6379"
+                },
+                {
+                    "anchor": ["RedisPassWord"],
+                    "action": "replace",
+                    "content": "Sogou"
+                },
+                {
+                    "anchor": ["ListenPort"],
+                    "action": "replace",
+                    "content": "8044"
+                },
+                {
+                    "anchor": ["ExternalVrqoServers"],
+                    "action": "replace",
+                    "content": "127.0.0.1:8044"
+                }
+            ]
+        },
+        {
+            "config_file": "vrqo.cfg.ex.press",
+            "config_type": "cfg",
+            "enable": false,
+            "modContent":[
+                {
+                    "anchor": ["isCacheExternal"],
+                    "action": "replace",
+                    "content": "no"
+                },
+                {
+                    "anchor": ["RedisAddress"],
+                    "action": "replace",
+                    "content": "127.0.0.1:6379"
+                },
+                {
+                    "anchor": ["RedisPassWord"],
+                    "action": "replace",
+                    "content": "Sogou"
+                },
+                {
+                    "anchor": ["ListenPort"],
+                    "action": "replace",
+                    "content": "8044"
+                },
+                {
+                    "anchor": ["isGPUCraw"],
+                    "action": "replace",
+                    "content": "no"
+                }
+            ]
+        },
+        {
+            "config_file": "vrqo.cfg.ex.stab",
+            "config_type": "cfg",
+            "enable": false,
+            "modContent":[
+                {
+                    "anchor": ["isCacheExternal"],
+                    "action": "replace",
+                    "content": "yes"
+                },
+                {
+                    "anchor": ["RedisAddress"],
+                    "action": "replace",
+                    "content": "127.0.0.1:6379"
+                },
+                {
+                    "anchor": ["RedisPassWord"],
+                    "action": "replace",
+                    "content": "Sogou"
+                },
+                {
+                    "anchor": ["ListenPort"],
+                    "action": "replace",
+                    "content": "8044"
+                },
+                {
+                    "anchor": ["isGPUCraw"],
+                    "action": "replace",
+                    "content": "no"
+                }
+            ]
+        },
+        {
+            "config_file": "vrqo.cfg.ex.diff",
+            "config_type": "cfg",
+            "enable": false,
+            "modContent":[
+                {
+                    "anchor": ["isCacheExternal"],
+                    "action": "replace",
+                    "content": "yes"
+                },
+                {
+                    "anchor": ["RedisAddress"],
+                    "action": "replace",
+                    "content": "127.0.0.1:6379"
+                },
+                {
+                    "anchor": ["RedisPassWord"],
+                    "action": "replace",
+                    "content": "Sogou"
+                },
+                {
+                    "anchor": ["ListenPort"],
+                    "action": "replace",
+                    "content": "8033"
+                },
+                {
+                    "anchor": ["isGPUCraw"],
+                    "action": "replace",
+                    "content": "no"
+                }
+            ]
+        }
+]

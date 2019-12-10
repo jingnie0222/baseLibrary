@@ -1,0 +1,40 @@
+{
+  "service_info":{
+          "service_name":"vrqo",
+          "service_type":"vrqo",
+          "service_exe_path":"QueryOptimizer",
+          "service_deploy_path":"/search/odin/test/"
+      },
+  "need_data_modify": false,
+  "data_base_path":"/search/data/vrqo_data/",
+  "data_modify_path":"",
+  "dev_data": [
+        {
+          "addr":"10.134.104.61",
+          "username":"root",
+          "password":"noSafeNoWork@2014",
+          "data_path":["/search/odin/xujiang/vrqo_data/base/external_conf/"]
+        }
+    ],
+  "pre_server_info": {
+          "addr":"10.134.64.32",
+          "username":"root",
+          "password":"vrqo@2019"
+        },
+  "vrqo_VRInfo": {
+    "class_ids": ["20005005","70041102","21165501"]
+  },
+  "vrqo_QOConfig": {
+    "class_ids": ["20005005","70041102","21165501"]
+  },
+  "vr_files": {
+    "class_ids": ["20005005","70041102","21165501"]
+  },
+  "vrqo_TransVrType": [
+                {
+                    "anchor": "$",
+                    "action": "append",
+                    "content": "test\tWIRELESS.SELFMANAGED.runpingnianpanding"
+                }
+            ]
+}
